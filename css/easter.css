@@ -1,5 +1,5 @@
 .easter-egg {
-    opacity: 0%;
+    opacity: 10%;
     transition: opacity 2s ease-in-out;
     position: fixed;
     top: 28px;
