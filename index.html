@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitação de Passaporte</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <nav aria-label="Atalhos">
+          <ul>
+            <li><a href="#">Conteúdo [1]</a></li>
+            <li><a href="#">Menu [2]</a></li>
+            <li><a href="#">Fim [3]</a></li>
+            <li><a href="#">Acessibilidade [4]</a></li>
+            <li><a href="#">Alto contraste [5]</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-main">
+        <img src="assets/brasao.png" alt="Brasão da Polícia Federal" />
+        <div>
+          <h1>Divisão de passaporte</h1>
+          <p>Coordenação-Geral de Polícia de Imigração</p>
+        </div>
+      </div>
+
+      <!-- Navegação principal -->
+      <nav aria-label="Navegação principal">
+        <ul class="main-menu">
+          <li><a href="#">Solicitação de passaporte</a></li>
+          <li><a href="#">Agendamento de atendimento</a></li>
+          <li><a href="#">Outros serviços</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Navegação de etapas -->
+    <nav class="etapas" aria-label="Etapas do formulário">
+      <ul>
+        <li>
+          <button class="active" aria-current="step">Dados pessoais</button>
+        </li>
+        <li><button>Documentos</button></li>
+        <li><button>Dados complementares</button></li>
+        <li><button>Revisar dados</button></li>
+      </ul>
+      <span class="obrigatorio">(*) Preenchimento Obrigatório</span>
+    </nav>
+
+    <main>
+      <h2>Nova solicitação de passaporte</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+
+          <label for="nome">Nome completo*:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="filiacao1">Filiação 1:</label>
+          <input type="text" id="filiacao1" name="filiacao1" />
+
+          <label for="filiacao2">Filiação 2:</label>
+          <input type="text" id="filiacao2" name="filiacao2" />
+
+          <label for="nascimento">Data de nascimento*:</label>
+          <input type="date" id="nascimento" name="nascimento" required />
+
+          <label>
+            <input type="checkbox" id="emancipado" name="emancipado" />
+            Emancipado
+          </label>
+
+          <label for="raca">Raça ou cor*:</label>
+          <select id="raca" name="raca" required>
+            <option value="">Selecione</option>
+          </select>
+
+          <label for="nacionalidade">Nacionalidade*:</label>
+          <select id="nacionalidade" name="nacionalidade" required>
+            <option value="BRASIL">BRASIL</option>
+          </select>
+
+          <label>
+            <input type="checkbox" id="adocao" name="adocao" />
+            Adoção Internacional
+          </label>
+
+          <label for="estado-civil">Estado civil:</label>
+          <select id="estado-civil" name="estado-civil">
+            <option value="">Selecione</option>
+          </select>
+          <p class="nota">
+            (para brasileiros com múltipla nacionalidade, selecionar Brasil)
+          </p>
+
+          <!-- Campos de sexo -->
+          <label for="sexo1">Sexo*:</label>
+          <select id="sexo1" name="sexo1" required>
+            <option value="">Selecione</option>
+          </select>
+
+          <label for="sexo2">Sexo:</label>
+          <select id="sexo2" name="sexo2">
+            <option value="">Selecione</option>
+          </select>
+
+          <label for="sexo3">Sexo:</label>
+          <select id="sexo3" name="sexo3">
+            <option value="">Selecione</option>
+          </select>
+        </fieldset>
+
+        <!-- Seção: Local de nascimento -->
+        <fieldset>
+          <legend>Local de nascimento</legend>
+
+          <label for="pais-nascimento">País*:</label>
+          <select id="pais-nascimento" name="pais-nascimento" required>
+            <option value="BRASIL">BRASIL</option>
+          </select>
+
+          <label for="estado-nascimento">UF*:</label>
+          <select id="estado-nascimento" name="estado-nascimento" required>
+            <option value="">Selecione</option>
+          </select>
+
+          <label for="cidade-nascimento">Cidade*:</label>
+          <select id="cidade-nascimento" name="cidade-nascimento" required>
+            <option value="">Selecione</option>
+          </select>
+        </fieldset>
+
+        <!-- Seção: Nomes anteriores -->
+        <fieldset>
+          <legend>
+            Nomes anteriores
+            <button aria-label="Ajuda sobre nomes anteriores">?</button>
+          </legend>
+
+          <p>
+            Para cada nome anterior, digite o nome, escolha o motivo da mudança
+            e clique em Adicionar.
+          </p>
+
+          <label for="nome-anterior">Nome anterior:</label>
+          <input type="text" id="nome-anterior" name="nome-anterior" />
+
+          <label for="motivo-mudanca">Motivo da mudança:</label>
+          <input type="text" id="motivo-mudanca" name="motivo-mudanca" />
+
+          <button type="button">Adicionar</button>
+        </fieldset>
+
+        <!-- Botão de próxima etapa -->
+        <div class="acoes-form">
+          <button type="submit">PRÓXIMO</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
