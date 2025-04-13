@@ -54,81 +54,80 @@
 
       <form action="#" method="post">
         <fieldset>
-            <legend>Dados Pessoais</legend>
-          
-            <div class="form-pessoa">
-              <div class="form-col-esquerda">
-                <div class="pessoa">
-                  <label for="nome">Nome completo*:</label>
-                  <input type="text" id="nome" name="nome" required />
-                </div>
-          
-                <div class="pessoa">
-                  <label for="filiacao1">Filiação 1:</label>
-                  <input type="text" id="filiacao1" name="filiacao1" />
-                </div>
-          
-                <div class="pessoa">
-                  <label for="filiacao2">Filiação 2:</label>
-                  <input type="text" id="filiacao2" name="filiacao2" />
-                </div>
+          <legend>Dados Pessoais</legend>
+
+          <div class="form-pessoa">
+            <div class="form-col-esquerda">
+              <div class="pessoa">
+                <label for="nome">Nome completo*:</label>
+                <input type="text" id="nome" name="nome" required />
               </div>
-          
-              <div class="form-col-direita">
-                <div class="sexo-box">
-                  <label for="sexo1">Sexo*:</label>
-                  <select id="sexo1" name="sexo1" required>
-                    <option value="">Selecione</option>
-                  </select>
-                </div>
-          
-                <div class="sexo-box">
-                  <label for="sexo2">Sexo:</label>
-                  <select id="sexo2" name="sexo2">
-                    <option value="">Selecione</option>
-                  </select>
-                </div>
-          
-                <div class="sexo-box">
-                  <label for="sexo3">Sexo:</label>
-                  <select id="sexo3" name="sexo3">
-                    <option value="">Selecione</option>
-                  </select>
-                </div>
+
+              <div class="pessoa">
+                <label for="filiacao1">Filiação 1:</label>
+                <input type="text" id="filiacao1" name="filiacao1" />
+              </div>
+
+              <div class="pessoa">
+                <label for="filiacao2">Filiação 2:</label>
+                <input type="text" id="filiacao2" name="filiacao2" />
               </div>
             </div>
-          
-            <label for="nascimento">Data de nascimento*:</label>
-            <input type="date" id="nascimento" name="nascimento" required />
-          
-            <label>
-              <input type="checkbox" id="emancipado" name="emancipado" />
-              Emancipado
-            </label>
-          
-            <label for="raca">Raça ou cor*:</label>
-            <select id="raca" name="raca" required>
-              <option value="">Selecione</option>
-            </select>
-          
-            <label for="nacionalidade">Nacionalidade*:</label>
-            <select id="nacionalidade" name="nacionalidade" required>
-              <option value="BRASIL">BRASIL</option>
-            </select>
-          
-            <label>
-              <input type="checkbox" id="adocao" name="adocao" />
-              Adoção Internacional
-            </label>
-          
-            <label for="estado-civil">Estado civil:</label>
-            <select id="estado-civil" name="estado-civil">
-              <option value="">Selecione</option>
-            </select>
-            <p class="nota">
-              (para brasileiros com múltipla nacionalidade, selecionar Brasil)
-            </p>
-          </fieldset>          
+
+            <div class="form-col-direita">
+              <div class="sexo-box">
+                <label for="sexo1">Sexo*:</label>
+                <select id="sexo1" name="sexo1" required>
+                  <option value="">Selecione</option>
+                </select>
+              </div>
+
+              <div class="sexo-box">
+                <label for="sexo2">Sexo:</label>
+                <select id="sexo2" name="sexo2">
+                  <option value="">Selecione</option>
+                </select>
+              </div>
+
+              <div class="sexo-box">
+                <label for="sexo3">Sexo:</label>
+                <select id="sexo3" name="sexo3">
+                  <option value="">Selecione</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <label>
+            <input type="checkbox" id="emancipado" name="emancipado" />
+            Emancipado
+          </label>
+
+          <label>
+            <input type="checkbox" id="adocao" name="adocao" />
+            Adoção Internacional
+          </label>
+
+          <label for="nascimento">Data de nascimento*:</label>
+          <input type="date" id="nascimento" name="nascimento" required />
+
+          <label for="raca">Raça ou cor*:</label>
+          <select id="raca" name="raca" required>
+            <option value="">Selecione</option>
+          </select>
+
+          <label for="nacionalidade">Nacionalidade*:</label>
+          <select id="nacionalidade" name="nacionalidade" required>
+            <option value="BRASIL">BRASIL</option>
+          </select>
+          <p class="nota">
+            (para brasileiros com múltipla nacionalidade, selecionar Brasil)
+          </p>
+          <label for="estado-civil">Estado civil:</label>
+          <select id="estado-civil" name="estado-civil">
+            <option value="">Selecione</option>
+          </select>
+        </fieldset>
 
         <fieldset>
           <legend>Local de nascimento</legend>
